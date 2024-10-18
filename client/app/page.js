@@ -1,9 +1,14 @@
-import Airpods from "./Airpods/page"
+import Airpods from "./Airpods/page";
+import TextScroll from "./TextScroll/page";
+import "./globals.css";
 
 export default function LifeIsBeautiful () {
   return (
     <div>
-      <Airpods />
-    </div>
+      <title>Accordion Demo</title>
+    <main>
+      <TextScroll />
+    </main>
+  </div>
   )
 }

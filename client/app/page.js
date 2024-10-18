@@ -1,7 +1,5 @@
 "use client"
 
-// components/ImageSequence.js
-
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -19,7 +17,7 @@ const ImageSequence = () => {
     const ctx = canvas.getContext('2d');
     const playhead = { frame: 0 };
     let curFrame = -1;
-    const images = new Array(urls.length); // Preallocate array for images
+    const images = new Array(urls.length);
 
     const loadImages = () => {
       return Promise.all(
@@ -28,7 +26,7 @@ const ImageSequence = () => {
             const img = new Image();
             img.src = url;
             img.onload = () => {
-              images[i] = img; // Store image in array
+              images[i] = img; 
               resolve();
             };
           });
@@ -46,7 +44,7 @@ const ImageSequence = () => {
     };
 
     loadImages().then(() => {
-      updateImage(); // Update the first image once all are loaded
+      updateImage(); 
 
       gsap.to(playhead, {
         frame: images.length - 1,
@@ -62,7 +60,6 @@ const ImageSequence = () => {
     });
 
     return () => {
-      // Cleanup logic can be added here if needed
     };
   }, []);
 

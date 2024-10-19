@@ -3,9 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger, Draggable } from 'gsap/all';
-
 gsap.registerPlugin(ScrollTrigger, Draggable);
-
 const Gallery = () => {
     const cardsRef = useRef(null);
     const galleryRef = useRef(null);

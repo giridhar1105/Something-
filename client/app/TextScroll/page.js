@@ -91,4 +91,5 @@ const accordionData = [
     text: 'Join superfast 5G wireless networks when you’re on the go. Download files, play multiplayer games, stream movies, check in with friends, and more.',
   },
 ];
+
 export default Accordion;

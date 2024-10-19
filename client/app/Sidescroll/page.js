@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -123,11 +123,27 @@ const Gallery = () => {
     return (
         <div className="relative w-full h-screen overflow-hidden" ref={galleryRef}>
             <ul className="absolute w-56 h-72 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cards" ref={cardsRef}>
-                {[...Array(31)].map((_, i) => (
-                    <li key={i} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">
-                        {i}
-                    </li>
-                ))}
+                <li key={0} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">0</li>
+                <li key={1} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">1</li>
+                <li key={2} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">2</li>
+                <li key={3} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">3</li>
+                <li key={4} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">4</li>
+                <li key={5} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">5</li>
+                <li key={6} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">6</li>
+                <li key={7} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">7</li>
+                <li key={8} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">8</li>
+                <li key={9} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">9</li>
+                <li key={10} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">10</li>
+                <li key={11} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">11</li>
+                <li key={12} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">12</li>
+                <li key={13} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">13</li>
+                <li key={14} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">14</li>
+                <li key={15} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">15</li>
+                <li key={16} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">16</li>
+                <li key={17} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">17</li>
+                <li key={18} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">18</li>
+                <li key={19} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">19</li>
+                <li key={20} className="w-56 h-72 flex items-center justify-center text-2xl font-sans bg-purple-300 rounded-lg absolute top-0 left-0">20</li>
             </ul>
             <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
                 <button className="prev px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-green-500 transition duration-200">Prev</button>

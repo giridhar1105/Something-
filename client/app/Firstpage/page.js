@@ -1,6 +1,5 @@
 "use client"
 
-// pages/index.js
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';

@@ -8,6 +8,6 @@ export default function LifeIsBeautiful () {
   return (
     <div>
       <Firstpage />
-  </div>
+    </div>
   )
 }

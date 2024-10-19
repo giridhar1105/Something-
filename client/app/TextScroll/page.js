@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect } from 'react';
 import { gsap, ScrollTrigger, ScrollSmoother } from 'gsap/all';
@@ -7,6 +7,11 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const Accordion = () => {
   useEffect(() => {
+    if (!ScrollSmoother) {
+      console.error("ScrollSmoother is not available.");
+      return;
+    }
+
     const scrollerSmoother = ScrollSmoother.create({
       content: '#content',
       wrapper: '#wrapper',
@@ -32,10 +37,10 @@ const Accordion = () => {
       opacity: 0,
       stagger: 0.5,
     })
-      .to('.accordion', {
-        marginBottom: -15,
-        stagger: 0.5,
-      }, '<');
+    .to('.accordion', {
+      marginBottom: -15,
+      stagger: 0.5,
+    }, '<');
 
     return () => {
       scrollerSmoother.kill();
@@ -55,7 +60,7 @@ const Accordion = () => {
                 index === 1 ? 'from-red-400 to-red-600' :
                 index === 2 ? 'from-green-400 to-blue-400' :
                 'from-purple-600 to-pink-600'
-              } w-max[50vw] max-w-[280px] p-6 rounded-lg mb-10 shadow-lg`}
+              } max-w-[280px] p-6 rounded-lg mb-10 shadow-lg`}
               key={index}
             >
               <div className="title text-white text-xl font-semibold mb-2">

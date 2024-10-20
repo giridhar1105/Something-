@@ -3,16 +3,13 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
-
 const ImageSequence = () => {
   useEffect(() => {
     const frameCount = 147;
     const urls = new Array(frameCount).fill().map((_, i) => 
       `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(i + 1).toString().padStart(4, '0')}.jpg`
     );
-
     const canvas = document.getElementById('image-sequence');
     const ctx = canvas.getContext('2d');
     const playhead = { frame: 0 };
@@ -42,7 +39,6 @@ const ImageSequence = () => {
         curFrame = frame;
       }
     };
-
     loadImages().then(() => {
       updateImage(); 
 

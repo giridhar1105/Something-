@@ -54,14 +54,11 @@ const ImageSequence = () => {
         },
       });
     });
-
     return () => {
     };
   }, []);
-
   return (
     <canvas id="image-sequence" width={1158} height={770} />
   );
 };
-
 export default ImageSequence;

@@ -8,7 +8,7 @@ import "./globals.css";
 export default function LifeIsBeautiful () {
   return (
     <div>
-      <Scate />
+      <Airpods />
     </div>
   )
 }

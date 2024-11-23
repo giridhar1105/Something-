@@ -12,6 +12,7 @@ export default function LifeIsBeautiful () {
       <TextScroll />
       <Sidescroll />
       <Firstpage />
+      <Scate />
     </div>
   )
 }

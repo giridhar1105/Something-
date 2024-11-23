@@ -10,6 +10,7 @@ export default function LifeIsBeautiful () {
     <div>
       <Airpods />
       <TextScroll />
+      <Sidescroll />
     </div>
   )
 }

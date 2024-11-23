@@ -9,6 +9,7 @@ export default function LifeIsBeautiful () {
   return (
     <div>
       <Airpods />
+      <TextScroll />
     </div>
   )
 }

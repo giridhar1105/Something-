@@ -11,6 +11,7 @@ export default function LifeIsBeautiful () {
       <Airpods />
       <TextScroll />
       <Sidescroll />
+      <Firstpage />
     </div>
   )
 }
